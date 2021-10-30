@@ -1,0 +1,27 @@
+{
+  "name": "backend_bsale",
+  "version": "1.0.0",
+  "description": "Backend Bsale",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielTurrillas/backend_bsale.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielTurrillas/backend_bsale/issues"
+  },
+  "homepage": "https://github.com/GabrielTurrillas/backend_bsale#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2"
+  }
+}
