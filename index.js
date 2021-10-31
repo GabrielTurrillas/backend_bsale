@@ -4,6 +4,11 @@ const express = require('express');
 const productRoute = require('./routes/product');
 const categoryRoute = require('./routes/category');
 
+//Middleware
+app.use(cors({
+  origin: "*",
+}))
+
 //App Init
 const app = express();
 
