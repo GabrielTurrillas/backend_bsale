@@ -1,16 +1,17 @@
 const express = require('express');
+const cors = require('cors')
 
 //Import Routes
 const productRoute = require('./routes/product');
 const categoryRoute = require('./routes/category');
 
+//App Init
+const app = express();
+
 //Middleware
 app.use(cors({
   origin: "*",
 }))
-
-//App Init
-const app = express();
 
 //Routes
 app.use('/api/category', categoryRoute)
