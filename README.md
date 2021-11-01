@@ -3,6 +3,7 @@ Backend Bsale
 
 API Documentation 
 
+```
 {
   "openapi": "3.0.0",
   "info": {
@@ -126,3 +127,4 @@ API Documentation
     }
   }
 }
+```
