@@ -15,7 +15,13 @@ router.get('/', async (req, res) => {
 router.get('/:product', async (req, res) => {
   try {
     const results = await db.promise().query(`SELECT * FROM product WHERE name LIKE '%${req.params.product}%';`)
-    res.status(200).send(results[0])
+    if (results[0].length) {
+      console.log('found')
+      res.status(200).send(results[0])
+    } else {
+      console.log('not found')
+      res.status(404).send('No se encontraron productos')
+    }
   } catch (e) {
     res.send(e)
   }
