@@ -3,6 +3,13 @@ Backend Bsale
 
 API Documentation 
 
+Backend Bsale es una API REST para la creación de aplicaciones de tiendas web. Contiene 4 endpoints
+```/api/product  -> Retorna todos los registros de la tabla product```
+```/api/product/{product} -> Retorna un conjunto de registros que contienen {product} en el campo name```
+```/api/product/category/{id} -> Retorna un conjunto de registros de una categoría especifica```
+```/api/product/category -> Retorna todos los registros de la tabla categoría```
+
+
 ```
 {
   "openapi": "3.0.0",
